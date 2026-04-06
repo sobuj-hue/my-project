@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Axon AI — Automate Everything That Slows You Down</title>
-  <meta name="description" content="Axon AI helps businesses automate repetitive workflows using cutting-edge AI — so your team can focus on what actually matters." />
+  <meta name="description" content="Axon AI helps businesses automate repetitive workflows with AI. Connect your tools, describe what to automate in plain English, and let AI handle the rest." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -12,341 +12,411 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-inner container">
-      <a href="#" class="logo">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="14" cy="14" r="14" fill="url(#logoGrad)"/>
-          <path d="M8 14L12 9L16 14L12 19L8 14Z" fill="white" opacity="0.9"/>
-          <path d="M14 14L18 9L22 14L18 19L14 14Z" fill="white" opacity="0.6"/>
-          <defs>
-            <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#6366f1"/>
-              <stop offset="1" stop-color="#8b5cf6"/>
-            </linearGradient>
-          </defs>
-        </svg>
+<!-- ─── Nav ─── -->
+<nav class="nav">
+  <div class="nav-inner container">
+    <a href="index.html" class="logo">
+      <svg width="26" height="26" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="url(#lg1)"/><path d="M8 14L12 9L16 14L12 19Z" fill="#fff" opacity=".9"/><path d="M14 14L18 9L22 14L18 19Z" fill="#fff" opacity=".55"/><defs><linearGradient id="lg1" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+      <span>Axon<strong>AI</strong></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="waitlist.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <a href="waitlist.html#waitlist" class="btn btn-sm">Join waitlist</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#features">Features</a>
+  <a href="index.html#pricing">Pricing</a>
+  <a href="waitlist.html">Contact</a>
+  <a href="waitlist.html#waitlist" class="btn">Join waitlist</a>
+</div>
+
+<!-- ─── Hero ─── -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="badge">Now accepting early access</div>
+    <h1>Turn repetitive work into<br><span class="gradient-text">automated intelligence</span></h1>
+    <p class="hero-sub">Axon AI plugs into your existing tools and automates the workflows draining your team — from data entry to customer communication and beyond.</p>
+    <div class="hero-cta">
+      <a href="waitlist.html#waitlist" class="btn btn-lg">Get early access</a>
+      <a href="#how-it-works" class="btn btn-lg btn-ghost">See how it works &rarr;</a>
+    </div>
+
+    <!-- Dashboard Mockup -->
+    <div class="mockup-wrapper fade-up">
+      <div class="mockup">
+        <div class="mockup-bar">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-url">app.axon.ai/dashboard</div>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-stats">
+            <div class="mockup-stat">
+              <div class="mockup-stat-label">Automations</div>
+              <div class="mockup-stat-value indigo">142</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-label">Runs today</div>
+              <div class="mockup-stat-value green">3,891</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-label">Hrs saved</div>
+              <div class="mockup-stat-value amber">68.4</div>
+            </div>
+            <div class="mockup-stat">
+              <div class="mockup-stat-label">Success rate</div>
+              <div class="mockup-stat-value green">99.7%</div>
+            </div>
+          </div>
+          <div class="mockup-chart">
+            <div class="mockup-bar-chart" style="height:35%"></div>
+            <div class="mockup-bar-chart" style="height:50%"></div>
+            <div class="mockup-bar-chart" style="height:42%"></div>
+            <div class="mockup-bar-chart" style="height:68%"></div>
+            <div class="mockup-bar-chart" style="height:55%"></div>
+            <div class="mockup-bar-chart" style="height:80%"></div>
+            <div class="mockup-bar-chart" style="height:72%"></div>
+            <div class="mockup-bar-chart" style="height:90%"></div>
+            <div class="mockup-bar-chart" style="height:85%"></div>
+            <div class="mockup-bar-chart" style="height:95%"></div>
+            <div class="mockup-bar-chart" style="height:78%"></div>
+            <div class="mockup-bar-chart" style="height:100%"></div>
+          </div>
+          <div class="mockup-rows">
+            <div class="mockup-row">
+              <div class="mockup-row-dot green"></div>
+              <span class="mockup-row-name">Invoice extraction &rarr; QuickBooks</span>
+              <span class="mockup-row-status">Running</span>
+            </div>
+            <div class="mockup-row">
+              <div class="mockup-row-dot green"></div>
+              <span class="mockup-row-name">Lead scoring &rarr; HubSpot</span>
+              <span class="mockup-row-status">Running</span>
+            </div>
+            <div class="mockup-row">
+              <div class="mockup-row-dot amber"></div>
+              <span class="mockup-row-name">Support ticket triage &rarr; Zendesk</span>
+              <span class="mockup-row-status pending">Queued</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Logos ─── -->
+<section class="logos-section">
+  <div class="container">
+    <p class="logos-label">Trusted by teams at</p>
+    <div class="logos-row">
+      <span class="logo-item">Notion</span>
+      <span class="logo-item">Stripe</span>
+      <span class="logo-item">Linear</span>
+      <span class="logo-item">Vercel</span>
+      <span class="logo-item">Figma</span>
+      <span class="logo-item">Loom</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Features ─── -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge">Features</div>
+      <h2>Everything you need to<br>automate your business</h2>
+      <p>Powerful AI meets dead-simple setup. No code required.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-up">
+        <div class="feature-icon">🔗</div>
+        <h3>Connect anything</h3>
+        <p>100+ native integrations — Slack, Gmail, Notion, HubSpot, Airtable, Stripe, and more. If it has an API, Axon can talk to it.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">✍️</div>
+        <h3>Build in plain English</h3>
+        <p>Describe what you want automated in natural language. Our AI interprets your intent and constructs the workflow logic for you.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">⚡</div>
+        <h3>Runs 24 / 7</h3>
+        <p>Set it and forget it. Axon executes your automations around the clock with 99.9% uptime — no babysitting needed.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">📊</div>
+        <h3>Real-time dashboard</h3>
+        <p>Monitor every run, catch errors instantly, and see exactly how much time and money your automations are saving.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">🔒</div>
+        <h3>Enterprise security</h3>
+        <p>SOC 2 Type II, GDPR compliant, end-to-end encryption, SSO, and audit logs. Your data never leaves your control.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">👥</div>
+        <h3>Team collaboration</h3>
+        <p>Share automations across your team, assign roles, leave comments, and build a shared library of reusable workflows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Stats Bar ─── -->
+<section class="section-dark" style="padding:0">
+  <div class="container" style="padding-top:56px;padding-bottom:56px">
+    <div class="stats-bar fade-up">
+      <div class="stat-item">
+        <div class="stat-value gradient-text">10,000+</div>
+        <div class="stat-label">Automations running</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value gradient-text">99.9%</div>
+        <div class="stat-label">Uptime SLA</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value gradient-text">4.9 / 5</div>
+        <div class="stat-label">User rating</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value gradient-text">$2M+</div>
+        <div class="stat-label">Saved by teams</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── How It Works ─── -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge">How it works</div>
+      <h2>Set up in minutes.<br>Save hours every week.</h2>
+    </div>
+    <div class="steps">
+      <div class="step fade-up">
+        <div class="step-number">Step 01</div>
+        <div class="step-icon">🔗</div>
+        <h3>Connect your tools</h3>
+        <p>Link Axon AI to your stack in one click — Slack, Gmail, Notion, HubSpot, Airtable, and 100+ more.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-number">Step 02</div>
+        <div class="step-icon">💬</div>
+        <h3>Describe your workflow</h3>
+        <p>Tell Axon what to do in plain English. Our AI understands context and builds the automation for you.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-number">Step 03</div>
+        <div class="step-icon">🚀</div>
+        <h3>Watch it run</h3>
+        <p>Axon executes 24/7. Monitor runs, catch errors, and expand automations from a single dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Testimonials ─── -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge">Testimonials</div>
+      <h2>Loved by early users</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial fade-up">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Axon replaced 3 Zapier zaps and a virtual assistant. It just understands what I need."</blockquote>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/36?img=10" alt="Sarah K." />
+          <div><strong>Sarah K.</strong><span>Head of Ops, Series A startup</span></div>
+        </div>
+      </div>
+      <div class="testimonial fade-up">
+        <div class="stars">★★★★★</div>
+        <blockquote>"15 hours a week of manual data processing — gone. The ROI was instant."</blockquote>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/36?img=11" alt="Marcus T." />
+          <div><strong>Marcus T.</strong><span>CEO, eCommerce brand</span></div>
+        </div>
+      </div>
+      <div class="testimonial fade-up">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Finally an AI tool that doesn't need a developer. My ops team runs it entirely on their own."</blockquote>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/36?img=12" alt="Priya M." />
+          <div><strong>Priya M.</strong><span>COO, consulting firm</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Pricing ─── -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge">Pricing</div>
+      <h2>Simple, transparent pricing</h2>
+      <p>Start free. Scale as you grow.</p>
+    </div>
+
+    <div class="pricing-toggle">
+      <span id="labelMonthly" class="active-label">Monthly</span>
+      <div class="toggle-track" id="pricingToggle">
+        <div class="toggle-thumb"></div>
+      </div>
+      <span id="labelAnnual">Annual</span>
+      <span class="save-badge">Save 20%</span>
+    </div>
+
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="pricing-card fade-up">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">
+          <span class="amount">$0</span> /mo
+        </div>
+        <div class="plan-desc">For individuals testing the waters.</div>
+        <ul class="plan-features">
+          <li>✓ 5 active automations</li>
+          <li>✓ 500 runs / month</li>
+          <li>✓ 5 integrations</li>
+          <li>✓ Community support</li>
+        </ul>
+        <a href="waitlist.html#waitlist" class="btn btn-outline">Get started free</a>
+      </div>
+      <!-- Growth -->
+      <div class="pricing-card pricing-card-featured fade-up">
+        <div class="plan-badge-tag">Most popular</div>
+        <div class="plan-name">Growth</div>
+        <div class="plan-price price-monthly">
+          <span class="amount">$49</span> /mo
+        </div>
+        <div class="plan-price price-annual" style="display:none">
+          <span class="amount">$39</span> /mo
+        </div>
+        <div class="plan-desc">For teams that need serious power.</div>
+        <ul class="plan-features">
+          <li>✓ Unlimited automations</li>
+          <li>✓ 10,000 runs / month</li>
+          <li>✓ All integrations</li>
+          <li>✓ Priority support</li>
+          <li>✓ Custom AI workflows</li>
+        </ul>
+        <a href="waitlist.html#waitlist" class="btn">Join waitlist</a>
+      </div>
+      <!-- Enterprise -->
+      <div class="pricing-card fade-up">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">
+          <span class="amount">Custom</span>
+        </div>
+        <div class="plan-desc">For orgs with complex, high-volume needs.</div>
+        <ul class="plan-features">
+          <li>✓ Unlimited everything</li>
+          <li>✓ Dedicated success manager</li>
+          <li>✓ SSO &amp; audit logs</li>
+          <li>✓ SLA guarantee</li>
+          <li>✓ On-premise option</li>
+        </ul>
+        <a href="waitlist.html" class="btn btn-outline">Contact us</a>
+      </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <table class="compare-table fade-up">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Starter</th>
+          <th>Growth</th>
+          <th>Enterprise</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Active automations</td><td>5</td><td>Unlimited</td><td>Unlimited</td></tr>
+        <tr><td>Runs / month</td><td>500</td><td>10,000</td><td>Unlimited</td></tr>
+        <tr><td>Integrations</td><td>5</td><td>All</td><td>All + custom</td></tr>
+        <tr><td>AI workflow builder</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Real-time dashboard</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Team members</td><td>1</td><td>10</td><td>Unlimited</td></tr>
+        <tr><td>Custom AI models</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Priority support</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>SSO / SAML</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
+        <tr><td>Audit logs</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
+        <tr><td>SLA guarantee</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
+        <tr><td>On-premise deploy</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ─── CTA Banner ─── -->
+<section class="section">
+  <div class="cta-banner container fade-up">
+    <h2>Ready to automate?</h2>
+    <p>Join the waitlist and get 3 months of Growth plan free when we launch.</p>
+    <a href="waitlist.html#waitlist" class="btn btn-lg">Get early access &rarr;</a>
+  </div>
+</section>
+
+<!-- ─── Footer ─── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="url(#lg2)"/><path d="M8 14L12 9L16 14L12 19Z" fill="#fff" opacity=".9"/><path d="M14 14L18 9L22 14L18 19Z" fill="#fff" opacity=".55"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
         <span>Axon<strong>AI</strong></span>
       </a>
-      <div class="nav-links">
-        <a href="#how-it-works">How it works</a>
-        <a href="#use-cases">Use cases</a>
-        <a href="#pricing">Pricing</a>
-      </div>
-      <a href="#waitlist" class="btn btn-sm">Join waitlist</a>
+      <p>Automate everything that slows you down.</p>
     </div>
-  </nav>
+    <div class="footer-links">
+      <div>
+        <h4>Product</h4>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="waitlist.html">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <a href="#">X / Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>&copy; 2026 Axon AI, Inc. All rights reserved.</p>
+  </div>
+</footer>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="badge">Now accepting early access applications</div>
-      <h1>
-        Turn repetitive work<br />
-        into <span class="gradient-text">automated intelligence</span>
-      </h1>
-      <p class="hero-sub">
-        Axon AI plugs into your existing tools and automates the workflows draining your team's time — from data entry and document processing to customer communication and beyond.
-      </p>
-      <div class="hero-cta">
-        <a href="#waitlist" class="btn btn-lg">Get early access</a>
-        <a href="#how-it-works" class="btn btn-lg btn-ghost">See how it works →</a>
-      </div>
-      <p class="hero-social-proof">
-        <span class="avatars">
-          <img src="https://i.pravatar.cc/32?img=1" alt="" />
-          <img src="https://i.pravatar.cc/32?img=2" alt="" />
-          <img src="https://i.pravatar.cc/32?img=3" alt="" />
-          <img src="https://i.pravatar.cc/32?img=4" alt="" />
-          <img src="https://i.pravatar.cc/32?img=5" alt="" />
-        </span>
-        <span>Join <strong>1,200+</strong> teams on the waitlist</span>
-      </p>
-    </div>
-    <div class="hero-glow"></div>
-  </section>
-
-  <!-- LOGOS -->
-  <section class="logos-section">
-    <div class="container">
-      <p class="logos-label">Trusted by teams at</p>
-      <div class="logos-row">
-        <span class="logo-item">Notion</span>
-        <span class="logo-item">Stripe</span>
-        <span class="logo-item">Linear</span>
-        <span class="logo-item">Vercel</span>
-        <span class="logo-item">Figma</span>
-        <span class="logo-item">Loom</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="section" id="how-it-works">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">How it works</div>
-        <h2>Set up in minutes.<br/>Save hours every week.</h2>
-        <p>No code. No complex configs. Just connect, describe, and automate.</p>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">01</div>
-          <div class="step-icon">🔗</div>
-          <h3>Connect your tools</h3>
-          <p>Link Axon AI to your existing stack — Slack, Gmail, Notion, HubSpot, Airtable, Zapier, and 100+ more.</p>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="step">
-          <div class="step-number">02</div>
-          <div class="step-icon">✍️</div>
-          <h3>Describe your workflow</h3>
-          <p>Tell Axon what to do in plain English. Our AI understands context and builds the automation logic for you.</p>
-        </div>
-        <div class="step-arrow">→</div>
-        <div class="step">
-          <div class="step-number">03</div>
-          <div class="step-icon">⚡</div>
-          <h3>Watch it run</h3>
-          <p>Axon executes your workflows 24/7. Monitor, tweak, and expand automations from a single dashboard.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- USE CASES -->
-  <section class="section section-dark" id="use-cases">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge badge-dark">Use cases</div>
-        <h2>Built for the work you do every day</h2>
-        <p>From solo founders to enterprise ops teams — Axon AI adapts to your needs.</p>
-      </div>
-      <div class="use-cases-grid">
-        <div class="use-case-card">
-          <div class="use-case-icon">📄</div>
-          <h3>Document Processing</h3>
-          <p>Auto-extract data from invoices, contracts, and forms. Route, classify, and file documents without lifting a finger.</p>
-          <div class="use-case-stat">Saves ~8 hrs/week</div>
-        </div>
-        <div class="use-case-card">
-          <div class="use-case-icon">📧</div>
-          <h3>Email & Inbox Automation</h3>
-          <p>Triage inboxes, draft replies, escalate urgent messages, and follow up on leads automatically.</p>
-          <div class="use-case-stat">Saves ~5 hrs/week</div>
-        </div>
-        <div class="use-case-card">
-          <div class="use-case-icon">📊</div>
-          <h3>Data Entry & Sync</h3>
-          <p>Keep CRMs, spreadsheets, and databases in sync. Eliminate copy-paste between tools forever.</p>
-          <div class="use-case-stat">Saves ~6 hrs/week</div>
-        </div>
-        <div class="use-case-card">
-          <div class="use-case-icon">💬</div>
-          <h3>Customer Support</h3>
-          <p>Resolve tier-1 tickets instantly, escalate complex issues to humans, and keep response times under 60 seconds.</p>
-          <div class="use-case-stat">60s avg response</div>
-        </div>
-        <div class="use-case-card">
-          <div class="use-case-icon">📅</div>
-          <h3>Scheduling & Follow-ups</h3>
-          <p>Book meetings, send reminders, and manage follow-up sequences without any manual coordination.</p>
-          <div class="use-case-stat">Saves ~3 hrs/week</div>
-        </div>
-        <div class="use-case-card">
-          <div class="use-case-icon">📈</div>
-          <h3>Reporting & Analytics</h3>
-          <p>Auto-generate weekly reports, pull metrics from multiple sources, and surface insights on a schedule.</p>
-          <div class="use-case-stat">Daily insights, zero effort</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section" id="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">Early feedback</div>
-        <h2>What our beta users say</h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial">
-          <div class="stars">★★★★★</div>
-          <p>"Axon AI replaced 3 different Zapier zaps and a virtual assistant. It just… understands what I need."</p>
-          <div class="testimonial-author">
-            <img src="https://i.pravatar.cc/40?img=10" alt="Sarah K." />
-            <div>
-              <strong>Sarah K.</strong>
-              <span>Head of Ops, Series A startup</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="stars">★★★★★</div>
-          <p>"We went from spending 15 hours a week on manual data processing to literally zero. The ROI was instant."</p>
-          <div class="testimonial-author">
-            <img src="https://i.pravatar.cc/40?img=11" alt="Marcus T." />
-            <div>
-              <strong>Marcus T.</strong>
-              <span>CEO, eCommerce brand</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="stars">★★★★★</div>
-          <p>"Finally an AI tool that doesn't need a developer to set up. My ops team runs it entirely on their own."</p>
-          <div class="testimonial-author">
-            <img src="https://i.pravatar.cc/40?img=12" alt="Priya M." />
-            <div>
-              <strong>Priya M.</strong>
-              <span>COO, consulting firm</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section class="section section-alt" id="pricing">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge">Pricing</div>
-        <h2>Simple, transparent pricing</h2>
-        <p>Start free. Scale as you grow. No hidden fees.</p>
-      </div>
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <div class="plan-name">Starter</div>
-          <div class="plan-price"><span>$0</span>/mo</div>
-          <div class="plan-desc">Perfect for individuals and small teams testing the waters.</div>
-          <ul class="plan-features">
-            <li>✓ 5 active automations</li>
-            <li>✓ 500 runs/month</li>
-            <li>✓ 5 integrations</li>
-            <li>✓ Email support</li>
-          </ul>
-          <a href="#waitlist" class="btn btn-outline">Get started free</a>
-        </div>
-        <div class="pricing-card pricing-card-featured">
-          <div class="plan-badge">Most popular</div>
-          <div class="plan-name">Growth</div>
-          <div class="plan-price"><span>$49</span>/mo</div>
-          <div class="plan-desc">For growing teams who need serious automation power.</div>
-          <ul class="plan-features">
-            <li>✓ Unlimited automations</li>
-            <li>✓ 10,000 runs/month</li>
-            <li>✓ All integrations</li>
-            <li>✓ Priority support</li>
-            <li>✓ Custom AI workflows</li>
-          </ul>
-          <a href="#waitlist" class="btn">Join waitlist</a>
-        </div>
-        <div class="pricing-card">
-          <div class="plan-name">Enterprise</div>
-          <div class="plan-price"><span>Custom</span></div>
-          <div class="plan-desc">For large organizations with complex, high-volume needs.</div>
-          <ul class="plan-features">
-            <li>✓ Unlimited everything</li>
-            <li>✓ Dedicated success manager</li>
-            <li>✓ SSO & audit logs</li>
-            <li>✓ SLA guarantee</li>
-            <li>✓ On-premise option</li>
-          </ul>
-          <a href="#waitlist" class="btn btn-outline">Contact us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WAITLIST -->
-  <section class="section waitlist-section" id="waitlist">
-    <div class="container">
-      <div class="waitlist-inner">
-        <div class="badge">Limited early access</div>
-        <h2>Be first. Get 3 months free.</h2>
-        <p>Join the waitlist today and lock in free Growth plan access for 3 months when we launch. No credit card required.</p>
-        <form class="waitlist-form" id="waitlistForm" onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <input type="text" name="name" placeholder="Your name" required autocomplete="name" />
-            <input type="email" name="email" placeholder="Work email" required autocomplete="email" />
-            <select name="company_size">
-              <option value="" disabled selected>Company size</option>
-              <option value="1">Just me</option>
-              <option value="2-10">2–10 people</option>
-              <option value="11-50">11–50 people</option>
-              <option value="51-200">51–200 people</option>
-              <option value="200+">200+ people</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-lg btn-submit">
-            <span class="btn-text">Secure my spot →</span>
-            <span class="btn-loading" style="display:none">Joining...</span>
-          </button>
-          <p class="form-note">We'll never spam you. Unsubscribe anytime.</p>
-        </form>
-        <div class="waitlist-success" id="waitlistSuccess" style="display:none">
-          <div class="success-icon">🎉</div>
-          <h3>You're on the list!</h3>
-          <p>We'll be in touch soon with your early access details. Tell a friend and move up the waitlist.</p>
-          <div class="share-buttons">
-            <a href="https://twitter.com/intent/tweet?text=Just+joined+the+waitlist+for+%40AxonAI+%E2%80%94+AI+automation+for+teams+that+want+to+move+faster.+https%3A%2F%2Faxon.ai" target="_blank" rel="noopener" class="btn btn-sm btn-ghost">Share on X</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="waitlist-glow"></div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="14" cy="14" r="14" fill="url(#logoGrad2)"/>
-            <path d="M8 14L12 9L16 14L12 19L8 14Z" fill="white" opacity="0.9"/>
-            <path d="M14 14L18 9L22 14L18 19L14 14Z" fill="white" opacity="0.6"/>
-            <defs>
-              <linearGradient id="logoGrad2" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#6366f1"/>
-                <stop offset="1" stop-color="#8b5cf6"/>
-              </linearGradient>
-            </defs>
-          </svg>
-          <span>Axon<strong>AI</strong></span>
-        </a>
-        <p>Automate everything that slows you down.</p>
-      </div>
-      <div class="footer-links">
-        <div>
-          <h4>Product</h4>
-          <a href="#how-it-works">How it works</a>
-          <a href="#use-cases">Use cases</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#waitlist">Early access</a>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact</a>
-        </div>
-        <div>
-          <h4>Legal</h4>
-          <a href="#">Privacy policy</a>
-          <a href="#">Terms of service</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom container">
-      <p>© 2026 Axon AI, Inc. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
