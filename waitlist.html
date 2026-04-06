@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green AI — Contact & Waitlist</title>
+  <meta name="description" content="Get in touch with Green AI or join the waitlist to get early access and 3 months free." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ─── Nav ─── -->
+<nav class="nav">
+  <div class="nav-inner container">
+    <a href="index.html" class="logo">
+      <svg width="26" height="26" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="url(#lg1)"/><path d="M8 14L12 9L16 14L12 19Z" fill="#fff" opacity=".9"/><path d="M14 14L18 9L22 14L18 19Z" fill="#fff" opacity=".55"/><defs><linearGradient id="lg1" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+      <span>Green<strong>AI</strong></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="waitlist.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#waitlist" class="btn btn-sm">Join waitlist</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#features">Features</a>
+  <a href="index.html#pricing">Pricing</a>
+  <a href="waitlist.html">Contact</a>
+  <a href="#waitlist" class="btn">Join waitlist</a>
+</div>
+
+<!-- ─── Page Header ─── -->
+<section class="page-header">
+  <div class="container">
+    <div class="badge">Contact</div>
+    <h1>Get in touch</h1>
+    <p>Have a question, partnership idea, or just want to say hi? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<!-- ─── Contact Section ─── -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left — Info -->
+      <div class="contact-info fade-up">
+        <div>
+          <h3>Email us</h3>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">✉️</span>
+            <span>hello@greenai.co</span>
+          </div>
+        </div>
+        <div>
+          <h3>Follow us</h3>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">𝕏</span>
+            <span>@GreenAI</span>
+          </div>
+          <div class="contact-info-item" style="margin-top:8px">
+            <span class="contact-info-icon">💼</span>
+            <span>LinkedIn / green-ai</span>
+          </div>
+        </div>
+        <div>
+          <h3>Location</h3>
+          <div class="contact-info-item">
+            <span class="contact-info-icon">📍</span>
+            <span>San Francisco, CA<br>Remote-first team</span>
+          </div>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:14px">
+            <a href="index.html#pricing" style="color:var(--indigo)">Pricing &rarr;</a>
+            <a href="#faq" style="color:var(--indigo)">FAQ &rarr;</a>
+            <a href="#waitlist" style="color:var(--indigo)">Join waitlist &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right — Form -->
+      <form class="contact-form fade-up" id="contactForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required autocomplete="name" />
+          <input type="email" name="email" placeholder="Email address" required autocomplete="email" />
+        </div>
+        <select name="subject" required>
+          <option value="" disabled selected>Select a topic</option>
+          <option value="general">General inquiry</option>
+          <option value="sales">Sales / pricing</option>
+          <option value="partnership">Partnership</option>
+          <option value="support">Support</option>
+          <option value="press">Press / media</option>
+        </select>
+        <textarea name="message" placeholder="Your message..." required></textarea>
+        <button type="submit" class="btn">Send message &rarr;</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section class="section section-dark" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="badge">FAQ</div>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">What is Green AI?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Green AI is an AI-powered automation platform that lets you connect your existing tools and automate repetitive workflows using plain English instructions. No code required.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How is this different from Zapier?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>While Zapier requires you to manually configure every step, Green AI uses AI to understand your intent and build the automation logic. You describe what you want in plain English; Green AI figures out the how.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What integrations do you support?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>We support 100+ integrations out of the box — including Slack, Gmail, Notion, HubSpot, Airtable, Stripe, Salesforce, Zendesk, Google Sheets, and more. We're adding new ones every week.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is my data safe?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Absolutely. We're SOC 2 Type II certified, GDPR compliant, and use end-to-end encryption for all data in transit and at rest. We never train on your data and you can delete it at any time.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">When do you launch?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>We're currently in private beta with select teams. Join the waitlist below to get early access — early waitlist members get 3 months of the Growth plan free at launch.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do I need to know how to code?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Not at all. Green AI is designed for non-technical teams. You describe your automation in plain English and the AI handles all the technical logic behind the scenes.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I try it for free?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Yes! Our Starter plan is completely free and includes 5 automations and 500 runs per month. No credit card required to sign up.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What kind of support do you offer?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><p>Starter plan users get community support. Growth plan users get priority email and chat support. Enterprise customers get a dedicated success manager and SLA guarantees.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Waitlist ─── -->
+<section class="waitlist-section" id="waitlist">
+  <div class="waitlist-glow"></div>
+  <div class="container">
+    <div class="waitlist-inner">
+      <div class="badge">Limited early access</div>
+      <h2>Be first. Get 3&nbsp;months&nbsp;free.</h2>
+      <p>Join the waitlist today and lock in free Growth plan access for 3 months when we launch. No credit card required.</p>
+
+      <form class="waitlist-form" id="waitlistForm">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required autocomplete="name" />
+          <input type="email" name="email" placeholder="Work email" required autocomplete="email" />
+          <select name="company_size">
+            <option value="" disabled selected>Company size</option>
+            <option value="1">Just me</option>
+            <option value="2-10">2 – 10</option>
+            <option value="11-50">11 – 50</option>
+            <option value="51-200">51 – 200</option>
+            <option value="200+">200+</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-lg btn-submit">
+          <span class="btn-text">Secure my spot &rarr;</span>
+          <span class="btn-loading" style="display:none">Joining...</span>
+        </button>
+        <p class="form-note">We'll never spam you. Unsubscribe anytime.</p>
+      </form>
+
+      <div class="waitlist-success" id="waitlistSuccess">
+        <div class="success-icon">🎉</div>
+        <h3>You're on the list!</h3>
+        <p>We'll be in touch soon with your early access details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Footer ─── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="url(#lg2)"/><path d="M8 14L12 9L16 14L12 19Z" fill="#fff" opacity=".9"/><path d="M14 14L18 9L22 14L18 19Z" fill="#fff" opacity=".55"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+        <span>Green<strong>AI</strong></span>
+      </a>
+      <p>Automate everything that slows you down.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Product</h4>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="waitlist.html">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <a href="#">X / Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>&copy; 2026 Green AI, Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
