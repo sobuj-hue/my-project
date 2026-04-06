@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   Axon AI — Shared JavaScript
+   Green AI — Shared JavaScript
    ═══════════════════════════════════════════════ */
 
 (function () {
@@ -103,9 +103,9 @@
       btn.disabled = true;
 
       // Persist client-side
-      const list = JSON.parse(localStorage.getItem('axon_waitlist') || '[]');
+      const list = JSON.parse(localStorage.getItem('greenai_waitlist') || '[]');
       list.push(data);
-      localStorage.setItem('axon_waitlist', JSON.stringify(list));
+      localStorage.setItem('greenai_waitlist', JSON.stringify(list));
 
       setTimeout(() => {
         waitlistForm.style.display = 'none';
@@ -128,7 +128,7 @@
       btn.disabled = true;
 
       // Persist client-side
-      const msgs = JSON.parse(localStorage.getItem('axon_contact') || '[]');
+      const msgs = JSON.parse(localStorage.getItem('greenai_contact') || '[]');
       msgs.push({
         name: contactForm.elements.name.value.trim(),
         email: contactForm.elements.email.value.trim(),
@@ -136,7 +136,7 @@
         message: contactForm.elements.message.value.trim(),
         sent_at: new Date().toISOString(),
       });
-      localStorage.setItem('axon_contact', JSON.stringify(msgs));
+      localStorage.setItem('greenai_contact', JSON.stringify(msgs));
 
       setTimeout(() => {
         contactForm.reset();
