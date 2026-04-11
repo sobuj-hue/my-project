@@ -1,0 +1,5 @@
+# GHDL compiled library manifests and simulation artefacts
+*.cf
+*.o
+*.vcd
+*.ghw
