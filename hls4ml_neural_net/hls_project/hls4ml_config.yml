@@ -1,0 +1,67 @@
+Backend: Vivado
+ClockPeriod: 10
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    data_in:
+      Precision:
+        result: auto
+      Trace: false
+    dense_0:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_0_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense_1:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_1_relu:
+      Precision:
+        result: auto
+      Trace: false
+    output:
+      Precision:
+        bias: auto
+        result: ap_fixed<16,6>
+        weight: auto
+      Trace: false
+    output_softmax:
+      Precision:
+        result: auto
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+InputShapes:
+  data_in:
+  - 4
+KerasModel: !keras_model '/home/user/my-project/hls4ml_neural_net/hls_project/keras_model.keras'
+OutputDir: /home/user/my-project/hls4ml_neural_net/hls_project
+OutputPredictions: null
+OutputShapes:
+  layer7_out:
+  - 3
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 10065fcb
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteTar: false
+  WriteWeightsTxt: true

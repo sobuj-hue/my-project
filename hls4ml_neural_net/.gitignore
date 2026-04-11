@@ -1,0 +1,10 @@
+# Compiled C-sim shared library (rebuilt by hls_model.compile())
+hls_project/firmware/*.so
+
+# Vivado / Vitis HLS synthesis artefacts
+hls_project/solution*/
+hls_project/vivado_hls.log
+hls_project/.autopilot/
+
+# Keras binary model (large, reproducible from script)
+hls_project/keras_model.keras
